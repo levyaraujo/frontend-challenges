@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  padding: 70px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top {
+  text-align: center;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top > h1 {
+  max-width: 400px;
+}
+
+.top > h1 > span {
+  font-weight: 200;
+}
+
+.top > p {
+  font-size: 16px;
+  margin-top: 18px;
+  max-width: 600px;
+}
+
+.card {
+  width: 310px;
+  background-color: white;
+  margin-bottom: 20px;
+  font-size: 14px;
+  height: 230px;
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 10.3px 7.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 10px 15px rgba(0, 0, 0, 0.12);
+  position: relative;
+}
+
+.card > img {
+  position: absolute;
+  margin-top: 40px;
+  right: 30px;
+}
+
+.card > p {
+  margin-top: 5px;
+}
+
+.supervisor {
+  margin-top: 65px;
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.team {
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.karma {
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+h1,
+h2 {
+  color: hsl(234, 12%, 34%);
+}
+
+p {
+  color: hsl(229, 6%, 66%);
+  font-weight: 200;
+}
+
+@media (min-width: 1050px) {
+  main {
+    padding-top: 30px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-areas:
+      "sup team calc"
+      "sup karma calc";
+    margin-top: 35px;
+    align-items: center;
+  }
+
+  .supervisor {
+    grid-area: sup;
+    margin: 0;
+  }
+
+  .team {
+    margin: 0 30px;
+  }
+
+  .calculator {
+    grid-area: calc;
+  }
+
+  .karma {
+    grid-area: karma;
+    margin: 20px auto 0;
+    margin-top: 20px;
+  }
+}
+
+.attribution {
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
