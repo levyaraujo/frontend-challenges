@@ -52,6 +52,12 @@ main {
     0 10.3px 7.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 10px 15px rgba(0, 0, 0, 0.12);
   position: relative;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 1s;
 }
 
 .card > img {
